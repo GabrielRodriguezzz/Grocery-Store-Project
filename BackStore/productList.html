@@ -1,0 +1,199 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Back Store Product List</title>
+         <link rel="stylesheet" href="../templatebackstore.css">
+    </head>
+
+    <body>
+    <!--Navigation bar-->
+    <div class="bs_container">
+        
+        <h1 class="logo">
+            <img src="../Images/giraffe.png"
+            width="50"
+            height="80"
+            >
+        Giraffood.
+        </h1>
+</div>
+
+<div class="bs_wrapper">
+    <div class="bs_sidebar">
+     <!--   <left><h2-menu><pre> Sidebar</pre></h2></left> -->
+        <p>
+                <!--<p><img src="https://www.iconsdb.com/icons/preview/white/home-5-xxl.png" alt="Home" style="width:15px;height:18px;margin-right:5px;">-->
+                    <ul class="bs_ul">
+
+                        <li class="bs_li_text">Home</li>
+                    
+
+                        <li class="bs_li_img"><a href="BackStoreHomePage.html">
+                            <img class= "bs_icon" src="../Images/home.png" alt="Home" >
+                        </a></li>
+
+
+                         <li class="bs_li_text ">Products</li>
+
+                            <li class="bs_li_img "><a href="productList.html">
+                                <img class="bs_icon" src="../Images/products.png" alt="Products">
+                                </a></li>
+
+
+
+                         <li class="bs_li_text">Users</li>
+
+                            <li class="bs_li_img "><a href="newUserList.html">
+                                <img class="bs_icon" src="../Images/users.png" alt="Users">
+                                </a></li>
+
+
+                         <li class="bs_li_text">Orders</li>
+
+                            <li class="bs_li_img "><a href="newOrderList.html">
+                                <img class="bs_icon" src="../Images/orders.png" alt="Orders">
+                                </a></li>
+
+
+                        <li class="bs_li_text">About</li>
+
+                            <li class="bs_li_img "><a href="">
+                                <img class= "bs_icon" src="../Images/about.png" alt="About">
+                                </a></li>
+
+
+                        <li class="bs_li_text">More</li>
+
+                        <li class="bs_li_img "><a href="">
+                            <img class= "bs_icon" src="../Images/more.png" alt="More">
+                        </a></li>
+
+
+                        <li class="bs_li_text">Settings</li>
+
+                        <li class="bs_li_img "><a href="">
+                            <img class= "bs_icon" src="../Images/settings.png" alt="Settings">
+                        </a></li>
+
+
+                        <li class="bs_li_text">Logout</li>
+
+                        <li class="bs_li_img "><a href="">
+                            <img class= "bs_icon" src="../Images/logout.png" alt="Logout">
+                        </a></li>
+
+                    </ul>
+            </p>
+    </div>
+        <div class="bs_content">
+            <br>
+            <p><h2 class="bs_h2-product">Product List</h2></p>
+
+<div class="bs_SearchBar">
+        <pre> <input class="bs_search" type="text" value="" placeholder="Search..."> </pre>
+        <button class="bs_addButton" type="button"><a class="bs_saveBtn" href=""><pre>ADD<img src="../Images/addIcon.png" alt="Home" style="width:15px;height:15px;margin-right:5px;float:right;">
+        </pre></a></button>
+ </div>
+ <br>
+ <p style="font-size:10px;text-align:left;color:black;margin-left:5px;margin-bottom:3px">Showing 5 out of ? products</p>
+ <body class="bs_body">
+        <table class="bs_editTable">
+            <thead style="border-top-left-radius: 5px;">
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Category</th>
+                <th>Price/Unit</th>
+                <th>Quantity (Stock)</th>
+                <th class="bs_editDelete"></th>
+                <th class="bs_editDelete"></th>
+        </thead> 
+        <tbody>
+            <!--First Product-->
+            <tr style="text-align:center;">
+                <td>Kiwi</td>
+                <td ><img class="bs_img-list" src="../Images/kiwi.jpg" style="width:150px;height:150px;"></td>
+                <td>Fruits & Vegetables</td>
+                <td>$0.95</td>
+                <td>43</td>
+                <!--The href="" will bring the user to p8 when they click the button-->
+                <td class="bs_editDelete">
+                    <button class="bs_editButton" type="button"><a class="bs_editBtn" href="EditProduct/EditKiwi.html"><pre>Edit <img src="../Images/editIcon.png" alt="Home"
+                    style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+                <td class="bs_editDelete">
+                    <button class="bs_deleteButton" type="button"><a class="bs_deleteBtn" href=""><pre>Delete <img src="../Images/deleteIcon.png" alt="Home"
+                        style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+            </tr>
+            <!--Second Product-->
+            <tr style="text-align:center;">
+                <td>Artisan Bread</td>
+                <td><img class="bs_img-list" src="../Images/Bread.jpg" style="width:150px;height:150px"></td>
+                <td>Bakery</td>
+                <td>$2.25</td>
+                <td>9</td>
+                    <td class="bs_editDelete">
+                        <button class="bs_editButton" type="button"><a class="bs_editBtn" href="EditProduct/EditArtisanBread.html"><pre>Edit <img src="../Images/editIcon.png" alt="Home"
+                        style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+                    <td class="bs_editDelete">
+                        <button class="bs_deleteButton" type="button"><a class="bs_deleteBtn" href=""><pre>Delete <img src="../Images/deleteIcon.png" alt="Home"
+                        style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+            </tr>
+            <!--Third Product-->
+            <tr style="text-align:center;">
+                <td>Coffee Beans (900g)</td>
+                <td><img class="bs_img-list" src="../Images/CoffeeBeans.jpeg" style="width:150px;height:150px"></td>
+                <td>Pantry</td>
+                <td>$15.99</td>
+                <td>67</td>
+                <td class="bs_editDelete">
+                    <button class="bs_editButton" type="button"><a class="bs_editBtn" href="EditProduct/EditCoffeeBeans.html"><pre>Edit <img src="../Images/editIcon.png" alt="Home"
+                    style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+                <td class="bs_editDelete">
+                    <button class="bs_deleteButton" type="button"><a class="bs_deleteBtn" href=""><pre>Delete <img src="../Images/deleteIcon.png" alt="Home"
+                        style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+            </tr>
+            <!--Fourth Product-->
+            <tr style="text-align:center;">
+                <td>Lamb</td>
+                <td><img class="bs_img-list" src="../Images/lamb.png" style="width:150px;height:150px"></td>
+                <td>Meats</td>
+                <td>$14.99</td>
+                <td>23</td>
+                <td class="bs_editDelete">
+                    <button class="bs_editButton" type="button"><a class="bs_editBtn" href="EditProduct/EditLamb.html"><pre>Edit <img src="../Images/editIcon.png" alt="Home"
+                    style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+                <td class="bs_editDelete">
+                    <button class="bs_deleteButton" type="button"><a class="bs_deleteBtn" href=""><pre>Delete <img src="../Images/deleteIcon.png" alt="Home"
+                        style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+            </tr>
+            <!--Fifth Product-->
+            <tr style="text-align:center;">
+                <td>Yogurt</td>
+                <td><img class="bs_img-list" src="../Images/Yogurt.jpg" style="width:150px;height:150px"></td>
+                <td>Dairy & Eggs</td>
+                <td>$5.99</td>
+                <td>18</td>
+                <td class="bs_editDelete">
+                    <button class="bs_editButton" type="button"><a class="bs_editBtn" href="EditProduct/EditYogurt.html"><pre>Edit <img src="../Images/editIcon.png" alt="Home"
+                    style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+                <td class="bs_editDelete">
+                    <button class="bs_deleteButton" type="button"><a class="bs_deleteBtn" href=""><pre>Delete <img src="../Images/deleteIcon.png" alt="Home"
+                        style="width:15px;height:15px;margin-left:8px;margin-right:5px;margin-top:2px;margin-bottom:2px;float:left;"></pre>
+                    </a></button></td>
+            </tr>
+        </tbody>
+        </table>
+    </body class="bs_body">
+        </div>
+    </div>
+</body>
