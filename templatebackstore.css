@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+
+/* reset every default styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: rgba(117, 58, 3, 0.979);
+  overflow-x: hidden;
+}
+
+/* Header */
+.bs_container {
+  width: 150%;
+  background: linear-gradient(to right, #ececea, #e7c88e);
+}
+
+.logo {
+  font-size: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+/* SideBar */
+
+.bs_sidebar {
+  /* display: flex; */
+  flex: 1;
+  background-color: linear-gradient(#838383, #bbbaba);
+  max-width: 6vw;
+  max-height: 100vh;
+  float: left;
+}
+
+.bs_ul {
+  /* ul_2 */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(#bbbaba, #838383);
+  margin-bottom: -101%;
+  padding-bottom: 101%;
+}
+
+.bs_li {
+  float: none;
+}
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.bs_li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(179, 111, 9);
+}
+
+.bs_li.dropdown {
+  display: inline-block;
+}
+.bs_li,
+.bs_li_text {
+  display: inline-block;
+  color: white;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+.bs_li_img,
+.dropdown:hover .dropbtn {
+  /* li_1 */
+  display: inline-block;
+  padding: 12px 14px;
+  float: none;
+}
+
+.bs_li_img:hover {
+  /* li_1 */
+  background-color: rgb(179, 111, 9);
+}
+
+.bs_icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  float: left;
+}
+
+/* content */
+/* List pages*/
+.bs_saveButton {
+  /* saveButton */
+  color: white;
+  text-align: center;
+  background-color: rgb(35, 204, 255);
+  border: none;
+  position: relative;
+  margin-left: 20px;
+  padding: 5px 5px;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+}
+
+.bs_saveButton:hover {
+  background-color: rgba(0, 206, 0, 0.801);
+}
+
+.bs_save-btn {
+  width: 21px;
+  height: 21px;
+  padding-left: 2px;
+  padding-right: 3px;
+}
+
+.bs_product-Info {
+  margin-left: 10px;
+}
+
+.bs_content {
+  flex: 4;
+  height: 500px;
+  background-color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ff8c00;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  margin-left: 10px;
+}
+
+.bs_search {
+  /* input_1 */
+  width: 390px;
+  padding: 10px 20px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  background-image: url(Images/searchIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: 0;
+  background-position: 2px;
+  background-size: 15px;
+}
+
+.bs_body {
+  /* .body2 */
+  min-height: fit-content;
+}
+
+/* Backstore table elements */
+.bs_saveBtn {
+  /* .p8_1 */
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+.bs_editBtn {
+  /* p8_2 */
+  text-decoration: none;
+  color: rgb(35, 204, 255);
+  font-weight: bold;
+}
+
+.bs_deleteBtn {
+  /* p8_3 */
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
+.bs_deleteButton {
+  border-color: red;
+  border-radius: 5px;
+  color: red;
+  background-color: white;
+}
+
+.h2_buttons:hover {
+  color: rgb(117, 58, 2);
+}
+.bs_deleteButton:hover {
+  background-color: rgba(255, 0, 0, 0.24);
+  color: rgb(117, 58, 2);
+}
+
+.bs_table {
+  /* .editTable2 */
+  max-width: 502px;
+}
+
+.bs_editTable {
+  margin-left: 10px;
+  border: collapse;
+  max-width: 925px;
+  margin-right: 20px;
+}
+
+.bs_editTable td,
+.bs_editTable th {
+  overflow: hidden;
+  text-align: center;
+}
+
+.bs_SearchBar,
+.bs_BtnSave,
+.bs_BtnEdit {
+  /* wrapper_2 */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bs_searchIcon {
+  color: white;
+  margin: 0px 5px;
+  width: 21px;
+  height: 23px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 5px;
+  padding: 5px 5px;
+  max-width: 500px;
+  table-layout: fixed;
+}
+
+.bs_wrapper {
+  display: flex;
+}
+
+.bs_h2-product {
+  /* h2-product */
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ff8c00;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  margin-left: 10px;
+}
+
+.bs_img-list {
+  /* img-list */
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  /*  display: flex;
+  align-items: center; 
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: auto\9; 
+  display: block; */
+}
+
+.bs_addButton {
+  /* addButton */
+  color: white;
+  text-align: center;
+  background-color: rgba(212, 134, 62, 0.651);
+  border: none;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.bs_addButton:hover {
+  background-color: rgba(0, 206, 0, 0.801);
+}
+
+.bs_editDelete {
+  /* editDelete */
+  border: none;
+}
+
+.bs_editButton {
+  /* editButton */
+  border-radius: 5px;
+  border-color: rgb(35, 204, 255);
+  color: rgb(35, 204, 255);
+  background-color: white;
+}
+
+.bs_editButton:hover {
+  background-color: rgba(35, 204, 255, 0.233);
+  color: rgb(134, 77, 1);
+}
+
+.bs_btn-group {
+  border: 1px solid grey;
+  padding: 5px 5px;
+  background-color: rgb(189, 187, 187);
+  color: black;
+  cursor: pointer;
+  float: left;
+}
+.bs_buttonImgs {
+  width: 15px;
+  height: 15px;
+  background-color: #ff8c00;
+  padding: 1px;
+}
+.bs_buttonImgs:hover {
+  background-color: black;
+  color: orange;
+}
+
+.bs_btn-group:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.bs_Edit {
+  border: none;
+  font-size: 18;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(255, 177, 32);
+  justify-content: right;
+  display: flex-end;
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.bs_Edit:hover {
+  background-color: rgb(190, 114, 0);
+}
+
+.bs_Delete {
+  border: none;
+  font-size: 18;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(255, 177, 32);
+  justify-content: right;
+  display: flex-end;
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.bs_Delete:hover {
+  background-color: rgb(190, 114, 0);
+}
+
+.bs_Save {
+  border: none;
+  font-size: 18;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(247, 148, 0);
+
+  margin-top: 20px;
+  margin-bottom: 15%;
+  margin-right: 10px;
+  display: flex-start;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.bs_Save:hover {
+  background-color: rgb(202, 125, 8);
+}
+
+.bs_Add {
+  border: none;
+  font-size: 18;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(247, 148, 0);
+
+  margin-top: 20px;
+  margin-bottom: 15%;
+  margin-right: 10px;
+  display: flex-start;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.bs_Add:hover {
+  background-color: rgb(202, 125, 8);
+}
+
+.bs_info {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(252, 208, 128);
+  border-radius: 20px;
+}
+.bs_User {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 30;
+}
+
+.bs_userInfo {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.bs_textarea {
+  width: 100%;
+  resize: none;
+}
+
+.bs_addImg {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-color: white;
+  border: none;
+  padding: 1px;
+}
+
+/* All Media Query Starts here*/
+
+@media screen and (max-width: 800px) {
+  .bs_sidebar {
+    max-width: 10%;
+  }
+  .bs_li_text {
+    display: none;
+  }
+  .bs_li_img {
+    padding-left: 5px;
+  }
+  .bs_icon {
+    height: 40px;
+  }
+}
+
+/* making the tables responsive */
+@media screen and (max-width: 750px) {
+  .bs_editTable th {
+    /* editTable */
+    overflow-x: auto;
+  }
+
+  .bs_editTable td {
+    overflow-x: auto;
+  }
+  .bs_li_2text {
+    /* li_2text */
+    display: none;
+  }
+  .bs_li {
+    /* li_2 */
+    float: none;
+  }
+}
+
+/* table responsiveness */
+@media only screen and (max-width: 1250px) {
+  tr {
+    font-size: 15px;
+  }
+  .bs_editTable {
+    margin-left: 7%;
+    border: collapse;
+    width: 75%;
+    margin-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  tr {
+    font-size: 13px;
+  }
+  .bs_editTable {
+    margin-left: 5%;
+    border: collapse;
+    width: 85%;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  tr {
+    font-size: 13px;
+  }
+  .bs_editTable {
+    margin-left: 3%;
+    border: collapse;
+    width: 90%;
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  tr {
+    font-size: 11px;
+  }
+  .bs_editTable {
+    margin-left: 2%;
+    border: collapse;
+    width: 95%;
+    margin-right: 2%;
+  }
+}
+
+/* save button in list pages*/
+@media only screen and (max-width: 550px) {
+}

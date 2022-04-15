@@ -1,0 +1,136 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Grapes</title>
+         <link rel="stylesheet" href="../template.css">
+         <script src="../fruitveg.js"></script>
+    </head>
+
+    <body>
+
+        <!--Navigation bar-->
+        <div class="container">
+            <div class="navbar">
+                <h1>
+                    <img class="logo" src="../Images/giraffe.png"
+                    width="50"
+                    height="80"
+                    >
+                    Giraffood.
+                    <div class="ShoppingCart">
+                        <a href="../ShoppingCart.html">
+                        <img src="../Images/Cart_1.png" class="ShoppingCart"   
+                        height="60";
+                        width="60";>
+                            </a>
+                    </div>
+                    </h1>
+                    <ul>
+                        <li><a href="../HomePage.html">Home</a></li>
+                        <li class="dropdown">
+                          <a href="" class="dropbtn">Aisles</a>
+                          <div class="dropdown-content">
+                            <a href="../Bakery/BakeryAisle.html">Bakery</a>
+                            <a href="../FruitVeg/FruitVegAisle.html">Fruits & Vegetable</a>
+                            <a href="../Pantry/PantryAisle.html">Pantry</a>
+                            <a href="../Meat/MeatAisle.html">Meats</a>
+                            <a href="../Dairy/DairyAisle.html">Dairy & Eggs</a>
+                          </div>
+                        </li>
+                        <li><a href="../SignUp.php">Sign Up</a></li>
+                        <li><a href="../LogIn.php">Login</a></li>
+                        </div>
+                      </ul>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class = "information">
+
+                <h2 class="h2-Items">
+                    Grapes
+                </h2>
+                <h3>
+                    3.45$
+                </h3>
+                <p class="priceUnit">
+                   3.45$/lb
+                </p>
+
+                <p>
+                    Quantity:
+                </p>
+
+                <div class="Quantity">
+                    <button class="minusButton" type="button" onclick="totalClickGrapes(-1)">-</button>
+                    <input id="totalClicksGrapes" type="text" value="1">
+                    <button class="plusButton" type="button" onclick="totalClickGrapes(1)">+</button>
+                </div>
+
+                <p>Item Total:</p>
+                
+                <div class="ItemTotal">
+                    <input id="totalPriceGrapes" type="text" value="3.45$">
+                </div>
+                <br>
+                
+                <div class="AddCard">
+                    <button class="AddCartButton" type="button">Add to Cart</button>
+                </div>
+                
+                <div class="ShowMore">
+                    <button class="ShowMoreButton" type="button" onclick="readMoreGrapes()">More description</button>
+                </div>
+                <p id="MoreDescription"></p>
+
+            </div>
+
+            <div class="FruitsAndVegetablesImg">
+                <img class ="foodItem" src="../Images/grapes.jpg">
+            </div>
+
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- Footer -->
+        <footer>
+                <div class="navbar">
+                        <nav style="text-align: left;">
+                            <ul class="ul_1">
+                                <li class="li_1">
+                                    <a href="Facebook">
+                                        <img src="../Images/fb.png"
+                                        width="40"
+                                        height="40">
+
+                                     </a>
+                                </li>
+
+                                <li class="li_1">
+                                    <a href="Instagram">
+                                        <img src="../Images/ig.png"
+                                        width="40"
+                                        height="40">
+                                    </a>
+                                </li>
+
+                                <li class="li_1">
+                                    <a href="Twitter" >
+                                        <img src="../Images/twitter.png"
+                                        width="40"
+                                        height="40">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                </div>
+            </footer>
+    </body>
+ </html>

@@ -1,0 +1,1283 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+
+/* reset every default styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: rgba(117, 58, 3, 0.979);
+  overflow-x: hidden;
+}
+
+/* Header */
+.container {
+  background: linear-gradient(to right, #f9f9f9, #fee0bb);
+}
+
+h1 {
+  font-size: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+
+.ShoppingCart {
+  margin-left: auto;
+  margin-top: 1%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: orange;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(179, 111, 9);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(#f9f9f9, #fee0bb);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  width: 100vw;
+}
+
+/* all Aisles */
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.aisle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.AisleItem {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Items */
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 80px 0;
+  gap: 20px;
+}
+
+.information {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 75px;
+}
+
+.h2-Items {
+  font-size: 54px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 10px 0 10px;
+}
+
+.priceUnit {
+  font-size: 20px;
+  margin: 10px 0 10px;
+}
+
+.Quantity {
+  margin: 10px 0 10px;
+  display: flex;
+}
+
+.Quantity button {
+  width: 40px;
+  height: 30px;
+}
+
+.Quantity button {
+  cursor: pointer;
+}
+
+.Quantity input {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.ItemTotal input {
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.AddCartButton {
+  border: none;
+  border-radius: 15px;
+  width: 180px;
+  height: 60px;
+  background-color: orange;
+}
+
+.ShowMore {
+  margin-top: 40px;
+}
+.ShowMoreButton {
+  border: none;
+  width: 180px;
+  height: 60px;
+  background-color: white;
+}
+
+/* more here */
+
+.DairyImg {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+}
+.BackeryImg {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+}
+
+.MeatImg {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+}
+.FruitsAndVegetablesImg {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+}
+
+.PantryImg {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+}
+
+.foodItem {
+  width: 400px;
+  height: 400px;
+}
+
+button,
+.button:hover {
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 8vh;
+  font-size: 36px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+/* SignUp Page */
+.SignUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#fadeb4, #ff8c00);
+  padding-top: 10px;
+  height: 120vh;
+  overflow-x: hidden;
+}
+
+.SignUpbox {
+  width: 50vw;
+  height: 100vh;
+  margin-top: 30px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.SignUpbox p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.SignUpbox input {
+  display: block;
+  width: 80%;
+  margin: 20px;
+  border: none;
+  border-bottom: 2px solid rgb(245, 207, 137);
+  transition: 500ms ease all;
+}
+
+.SignUpbox input:focus {
+  outline: none;
+  box-shadow: 0 1px 0 0 orange;
+  border-color: orange;
+}
+
+.SignUpbox button {
+  border: none;
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  bottom: 0;
+  background-color: orange;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Log in page */
+.LogInForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#fadeb4, #ff8c00);
+  padding-top: 10px;
+  height: 120vh;
+  overflow-x: hidden;
+}
+
+.LogInbox {
+  width: 50vw;
+  height: 70vh;
+  background: white;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.LogInbox p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.LogInbox input {
+  display: block;
+  width: 80%;
+  margin: 20px;
+  border: none;
+  border-bottom: 2px solid rgb(245, 207, 137);
+  transition: 500ms ease all;
+}
+
+.LogInbox input:focus {
+  outline: none;
+  box-shadow: 0 1px 0 0 orange;
+  border-color: orange;
+}
+
+.LogInbox button {
+  border: none;
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  bottom: 0;
+  background-color: orange;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Back store stuff */
+
+/*user info edit*/
+
+.info {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(252, 208, 128);
+  border-radius: 20px;
+}
+.User {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 30;
+}
+
+.userInfo {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.Edit {
+  border: none;
+  font-size: 18;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(255, 177, 32);
+  justify-content: right;
+  display: flex-end;
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.Edit:hover {
+  background-color: rgb(190, 114, 0);
+}
+
+.Delete {
+  border: none;
+  font-size: 18;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(255, 177, 32);
+  justify-content: right;
+  display: flex-end;
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.Delete:hover {
+  background-color: rgb(190, 114, 0);
+}
+
+.Save {
+  border: none;
+  font-size: 18;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(247, 148, 0);
+
+  margin-top: 20px;
+  margin-bottom: 15%;
+  margin-right: 10px;
+  display: flex-start;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.Save:hover {
+  background-color: rgb(202, 125, 8);
+}
+
+.Add {
+  border: none;
+  font-size: 18;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(247, 148, 0);
+
+  margin-top: 20px;
+  margin-bottom: 15%;
+  margin-right: 10px;
+  display: flex-start;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.Add:hover {
+  background-color: rgb(202, 125, 8);
+}
+
+/* Shopping cart stuff */
+/*Shopping Cart */
+
+.ShoppingCartTitle {
+  margin-top: 10px;
+  font-size: 35px;
+  color: rgba(117, 58, 3, 0.979);
+}
+.ShoppingContainer {
+  display: flex;
+  padding: 10px;
+  margin: 50ps;
+
+  flex-wrap: wrap;
+}
+.ShoppingContainer > *:nth-child(class="box1") {
+  flex: 1 1 70%;
+}
+
+.ShoppingContainer > *:nth-child(class="box2") {
+  flex: 1 1 30%;
+}
+
+.box1 {
+  flex: 3;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: antiquewhite;
+  border: 3px;
+  border-style: solid;
+  padding-left: 20px;
+  border-radius: 5px 5px 5px 5px;
+  border-color: rgba(117, 58, 3, 0.979);
+  margin-bottom: auto;
+  margin-bottom: 80px;
+}
+
+.ShoppingCartSubtitles {
+  padding-left: 10px;
+  font-size: 25px;
+  color: rgba(117, 58, 3, 0.979);
+}
+
+.itemRow {
+  padding-left: 20px;
+  width: 20px;
+  height: 15px;
+}
+
+.itemRow td {
+  /* overflow: hidden; */
+  border-style: solid;
+  border-color: rgba(117, 58, 3, 0.979);
+}
+
+.tableHead {
+  background-color: rgba(117, 58, 3, 0.979);
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  height: 10%;
+  width: 100%;
+  padding: 5px;
+}
+
+.ImageTextDescription {
+  display: flex;
+  margin: 12px;
+}
+.CarImg {
+  width: 145px;
+  height: 145px;
+  padding: 20px;
+}
+
+.ProductNameInCart {
+  margin: 0px;
+  padding: 8%;
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+
+.ProductNameInCartStyle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: rgba(117, 58, 3, 0.979);
+}
+
+.ObjectInCartlink {
+  text-decoration: none;
+}
+
+.deleteProductFromCart {
+  margin-top: 60px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: left;
+  width: 100%;
+  color: rgba(117, 58, 3, 0.979);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  text-decoration-line: underline;
+  display: flex;
+}
+
+.deleteProductFromCart:hover {
+  color: red;
+}
+
+.box3 {
+  align-content: center;
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.minusButton {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+  border-color: rgba(117, 58, 3, 0.979);
+}
+
+.plusButton {
+  background-color: whitesmoke;
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  border-color: rgba(117, 58, 3, 0.979);
+}
+
+.box3 input[type="text"] {
+  align-content: center;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-color: rgba(117, 58, 3, 0.979);
+  background-color: antiquewhite;
+}
+
+hr {
+  border-bottom-color: rgba(117, 58, 3, 0.979);
+}
+
+.box2 {
+  flex: 1;
+  margin-right: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: antiquewhite;
+  border: 3px;
+  border-style: solid;
+  padding-left: 20px;
+  border-radius: 5px 5px 5px 5px;
+  border-color: rgba(117, 58, 3, 0.979);
+  margin-bottom: 80px;
+}
+
+.CheckoutButton {
+  border: none;
+  width: 88%;
+  height: 60px;
+  display: inline-block;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px;
+
+  border-radius: 10px;
+  background-color: #d4955a;
+  align-content: center;
+}
+
+.CheckoutButton p {
+  text-align: center;
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.CheckoutButton:hover {
+  align-items: center;
+  background-color: rgba(117, 58, 3, 0.979);
+  color: whitesmoke;
+}
+
+.ContinueShoppingButton {
+  border: none;
+  width: 88%;
+  height: 60px;
+  display: inline-block;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px;
+  margin-top: auto;
+  border-radius: 10px;
+  background-color: #d4955a;
+  align-content: center;
+}
+
+.ContinueShoppingButton p {
+  text-align: center;
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.ContinueShoppingButton:hover {
+  align-items: center;
+  background-color: rgba(117, 58, 3, 0.979);
+  color: whitesmoke;
+}
+
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+/* Back store */
+/* Navigation Bar */
+.ul_1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: orange;
+}
+
+.ul_2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(#bbbaba, #838383);
+}
+
+.li_1 {
+  float: left;
+}
+
+.li_1 a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li_1 a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(179, 111, 9);
+}
+
+.li_1.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(#f9f9f9, #fee0bb);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* -------------------------- */
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: linear-gradient(#bbbaba, #838383);
+  max-width: 10vw;
+}
+@media screen and(max-width:861px) {
+  .sidebar {
+    max-width: 20vw;
+  }
+}
+
+.content {
+  flex: 4;
+  height: 500px;
+  background-color: white;
+}
+
+.h2-menu {
+  font-size: 25px;
+}
+
+.h2-content {
+  font-size: 30px;
+  color: #f9f9f9;
+}
+.li_1 {
+  float: left;
+}
+
+.li_2 {
+  float: none;
+}
+
+.li_2 a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li_2 a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(179, 111, 9);
+}
+
+.li_2.dropdown {
+  display: inline-block;
+}
+
+.h2-product {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ff8c00;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  margin-left: 10px;
+}
+
+.input_1 {
+  width: 390px;
+  padding: 10px 20px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  background-image: url(Images/searchIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: 0;
+  background-position: 2px;
+  background-size: 15px;
+}
+
+.wrapper_2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchIcon {
+  color: white;
+  margin: 0px 5px;
+  width: 21px;
+  height: 23px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 5px;
+  padding: 5px 5px;
+  max-width: 500px;
+  table-layout: fixed;
+}
+td {
+  overflow: scroll;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  width: 20%;
+  border: 1px solid rgb(230, 194, 152);
+  /* 
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  */
+}
+
+.img-list {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  /*  display: flex;
+  align-items: center; 
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: auto\9; 
+  display: block; */
+}
+
+th {
+  border: 1px solid rgba(163, 96, 8, 0.938);
+  max-width: 0;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+.addButton {
+  color: white;
+  text-align: center;
+  background-color: rgba(212, 134, 62, 0.651);
+  border: none;
+}
+
+.addButton:hover {
+  background-color: rgba(0, 206, 0, 0.801);
+}
+
+.saveButton {
+  color: white;
+  text-align: center;
+  background-color: rgb(35, 204, 255);
+  border: none;
+  position: relative;
+  margin-left: 20px;
+  padding: 5px 5px;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+}
+
+.saveButton:hover {
+  background-color: rgba(0, 206, 0, 0.801);
+}
+
+.editDelete {
+  border: none;
+}
+
+.editButton {
+  border-radius: 5px;
+  border-color: rgb(35, 204, 255);
+  color: rgb(35, 204, 255);
+  background-color: white;
+}
+
+.editButton:hover {
+  background-color: rgba(35, 204, 255, 0.233);
+  color: rgb(134, 77, 1);
+}
+
+.deleteButton {
+  border-color: red;
+  border-radius: 5px;
+  color: red;
+  background-color: white;
+}
+
+.h2_buttons:hover {
+  color: rgb(117, 58, 2);
+}
+.deleteButton:hover {
+  background-color: rgba(255, 0, 0, 0.24);
+  color: rgb(117, 58, 2);
+}
+
+.p8_1 {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+.p8_2 {
+  text-decoration: none;
+  color: rgb(35, 204, 255);
+  font-weight: bold;
+}
+
+.p8_3 {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
+.h1-editItem {
+  font-size: large;
+  color: #ff8c00;
+}
+
+.btn-group {
+  border: 1px solid grey;
+  padding: 5px 5px;
+  background-color: rgb(189, 187, 187);
+  color: black;
+  cursor: pointer;
+  float: left;
+}
+
+.buttonImgs:hover {
+  background-color: black;
+  color: orange;
+}
+
+.btn-group:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.buttonImgs {
+  width: 15px;
+  height: 15px;
+  background-color: #ff8c00;
+  padding: 1px;
+}
+
+.editTable {
+  margin-left: 10px;
+  border: collapse;
+  max-width: 925px;
+  margin-right: 20px;
+}
+
+.editTable td,
+.editTable th {
+  overflow: hidden;
+  text-align: center;
+}
+.edittableorders td:nth-child(3) {
+  max-height: 15vw;
+  overflow: scroll;
+}
+
+.wrapper_2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.save-btn {
+  width: 21px;
+  height: 21px;
+  padding-left: 2px;
+  padding-right: 3px;
+}
+
+.product-Info {
+  margin-left: 10px;
+}
+
+.addImg {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-color: white;
+  border: none;
+  padding: 1px;
+}
+
+.description {
+  position: absolute;
+  width: 100%;
+}
+
+.editTable2 {
+  max-width: 502px;
+}
+
+.body2 {
+  min-height: fit-content;
+}
+
+/* ALL MEDIA QUERY STARTS HERE */
+
+/* media query */
+@media screen and (max-width: 861px) {
+  .AisleItem {
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    opacity: 0.8;
+  }
+
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    align-self: center;
+  }
+
+  /* Items */
+  .product {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .information {
+    order: 2;
+    flex-basis: 30%;
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .BackeryImg {
+    order: 1;
+    position: relative;
+    flex-basis: 40%;
+    align-self: center;
+    display: flex;
+  }
+
+  .DairyImg {
+    order: 1;
+    position: relative;
+    flex-basis: 40%;
+    align-self: center;
+    display: flex;
+  }
+
+  .FruitsAndVegetablesImg {
+    order: 1;
+    position: relative;
+    flex-basis: 40%;
+    align-self: center;
+    display: flex;
+  }
+  .MeatImg {
+    order: 1;
+    position: relative;
+    flex-basis: 40%;
+    align-self: center;
+    display: flex;
+  }
+  .PantryImg {
+    order: 1;
+    position: relative;
+    flex-basis: 40%;
+    align-self: center;
+    display: flex;
+  }
+  .foodItem {
+    width: 50vw;
+    height: auto;
+  }
+
+  @media screen and (max-width: 691px) {
+    .title {
+      margin-top: 10px;
+      margin-bottom: 8vh;
+      font-size: 24px;
+      font-weight: 600;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .image {
+    display: block;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* media query for login page */
+@media screen and (max-height: 595px) {
+  .LogInForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#fadeb4, #ff8c00);
+    padding-top: 10px;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .LogInbox {
+    width: 50vw;
+    height: 400px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  @media screen and (max-height: 481px) {
+    .LogInForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(#fadeb4, #ff8c00);
+      padding-top: 10px;
+      height: 200vh;
+    }
+
+    .LogInbox {
+      width: 50vw;
+      height: 400px;
+
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      background-color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  /* SignUp Page */
+
+  .SignUpForm {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#fadeb4, #ff8c00);
+    padding-top: none;
+    overflow-x: hidden;
+  }
+
+  .SignUpbox {
+    width: 100%;
+    height: 80%;
+    margin-top: none;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4),
+      0 -10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .SignupButton {
+    vertical-align: top;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  /* Login Page */
+
+  .LogInForm {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#fadeb4, #ff8c00);
+    padding-top: none;
+    overflow-x: hidden;
+  }
+
+  .LogInbox {
+    width: 100%;
+    height: 80%;
+    margin-top: none;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4),
+      0 -10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+}
+
+/* making the tables responsive of the backstore */
+
+@media screen and (max-width: 750px) {
+  .editTable th {
+    overflow-x: auto;
+  }
+
+  .editTable td {
+    overflow-x: auto;
+  }
+  .li_2text {
+    display: none;
+  }
+  .li_2 {
+    margin-left: 0px;
+  }
+}
